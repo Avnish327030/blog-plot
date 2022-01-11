@@ -33,6 +33,7 @@ def database_initialize():
 @application.route('/')
 @application.route('/welcome')
 def welcome():
+    email=None
     if 'email' in session:
         email=session['email']
     else:
